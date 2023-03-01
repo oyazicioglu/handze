@@ -1,4 +1,4 @@
-import styles from "./Anchor.module.css";
+import styles from "./Anchor.module.scss";
 
 import React, { Fragment } from 'react'
 import Link from "next/link";

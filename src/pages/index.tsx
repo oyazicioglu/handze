@@ -1,10 +1,9 @@
-import { Header } from "@/component/ui/header/Header";
+import { PropsBase } from "@/lib/PropsBase";
 
-export default function Home() {
+export default function Home(props: PropsBase) {
   return (
     <>
-
-      <Header></Header>
+      {props.children}
     </>
   )
 }

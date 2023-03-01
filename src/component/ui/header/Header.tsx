@@ -1,8 +1,6 @@
-import Link from 'next/link';
 import React, { Fragment } from 'react'
 import { Anchor } from '../anchor/Anchor';
-import styles from "./Header.module.css";
-
+import styles from "./Header.module.scss";
 
 export const Header = () => {
     return (
@@ -17,9 +15,19 @@ export const Header = () => {
                         <li className={styles.li}>
                             <Anchor href='/shop'>Shop</Anchor>
                         </li>
+                        <li className={styles.li}>
+                            <Anchor href='/contact'>Contact</Anchor>
+                        </li>
+                        <li className={styles.li}>
+                            <Anchor href='/aboutus'>About Us</Anchor>
+                        </li>
+                        <li className={styles.li}>
+                            <Anchor href='/feedback'>Feedback</Anchor>
+                        </li>
                     </ul>
                 </nav>
-                <div className="actions">Actions</div>
+                <div className={styles.actions}>
+                </div>
             </div>
         </Fragment>
     )

@@ -1,3 +1,4 @@
+import { Header } from "@/component/ui/header/Header";
 
 export default function RootLayout({
     children,
@@ -6,7 +7,10 @@ export default function RootLayout({
 }) {
     return (
         <>
-            <main>{children}</main>
+            <main>
+                <Header></Header>
+                {children}
+            </main>
         </>
     );
 }

@@ -1,0 +1,20 @@
+.anchor {
+    a {
+        transition: all 200ms ease-in-out;
+    }
+
+    a:hover {
+        color: var(--primary);
+    }
+
+    a:hover>.underline {
+        transform: scaleX(1);
+    }
+
+    .underline {
+        height: 1px;
+        background-color: var(--primary);
+        transform: scaleX(0);
+        transition: all 200ms ease-in-out;
+    }
+}
