@@ -2,7 +2,8 @@
     display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
-    padding: 1rem 4rem;
+    padding: 2rem 4rem;
+    background-color: var(--paper);
 
     .ul {
         list-style: none;
