@@ -1,5 +1,5 @@
+import { Anchor } from '@/component/ui/anchor/Anchor';
 import React, { Fragment } from 'react'
-import { Anchor } from '../anchor/Anchor';
 import styles from "./Header.module.scss";
 
 export const Header = () => {

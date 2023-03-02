@@ -1,0 +1,45 @@
+.button {
+    position: relative;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--bg);
+    overflow: hidden;
+    z-index: 1;
+
+    &[class~="primary"] {
+        background-color: var(--primary);
+
+        [class="shutter"] {
+            background-color: var(--secondary);
+        }
+    }
+
+    [class="shutter"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary);
+        transform: scaleX(0);
+        z-index: 0;
+    }
+
+    &:hover>[class="shutter"] {
+        z-index: 2;
+        transform: scaleX(1);
+    }
+
+    &[class~="small"] {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    &[class~="large"] {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+}

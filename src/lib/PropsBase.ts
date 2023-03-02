@@ -1,3 +1,3 @@
 export interface PropsBase {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
